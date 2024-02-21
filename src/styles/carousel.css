@@ -1,0 +1,36 @@
+.carousel {
+  position: relative;
+  text-align: center;
+  box-sizing: border-box;
+  touch-action: pan-y;
+  overscroll-behavior: none;
+}
+
+.carousel.is-dragging {
+  touch-action: none;
+}
+
+.carousel * {
+  box-sizing: border-box;
+}
+
+.carousel__track {
+  display: flex;
+  padding: 0 !important;
+  position: relative;
+}
+
+.carousel__viewport {
+  overflow: hidden;
+}
+
+.carousel__sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
